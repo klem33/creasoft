@@ -29,19 +29,27 @@ and open the template in the editor.
     </head>
 
     <body id="start">
+
+        <!--
         <div class="panelLogo panel" style="display: block;">
             <img src="img/logo.png" alt="logo" class="animated delay zoomIn"/>
             <div class="animated delay2 zoomIn2 toptitle" >
-                <span class="crea">Créa</span>-<span class="soft">soft</span>
+                <span class="crea">Créa</span><span class="soft">soft</span>
             </div>
         </div>
+        -->
 
-        <div id="particles-js" style='background-color: rgb(255,255,255); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;'>
+
+        <div class="title">
+            Créasoft
+        </div>
+
+        <div id="particles-js">
             <script src="particles.js"></script>
             <script src="app.js"></script>
         </div>
 
-        <div class="navbar navbar-inverse navbar-static-top" style="margin-bottom: 0px;">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0px;">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
@@ -349,16 +357,16 @@ and open the template in the editor.
                                             $(window).scroll(function () {
                                                 var windowHeight = $(this).height();
                                                 var windowScrollTop = $(this).scrollTop();
-                                                if (windowScrollTop > windowHeight) {
-                                                    $('.navbar').removeClass("navbar-static-top");
-                                                    $('.navbar').addClass("navbar-fixed-top");
-                                                    $('.section2').css('margin-top', '51px');
-                                                } else {
-                                                    $('.navbar').removeClass("navbar-fixed-top");
-                                                    $('.navbar').addClass("navbar-static-top");
-                                                    $('.section2').css('margin-top', '0px');
-                                                }
-
+                                                /*if (windowScrollTop > windowHeight) {
+                                                 $('.navbar').removeClass("navbar-static-top");
+                                                 $('.navbar').addClass("navbar-fixed-top");
+                                                 $('.section2').css('margin-top', '51px');
+                                                 } else {
+                                                 $('.navbar').removeClass("navbar-fixed-top");
+                                                 $('.navbar').addClass("navbar-static-top");
+                                                 $('.section2').css('margin-top', '0px');
+                                                 }
+                                                 */
                                                 $('.fadeInBlock').each(function () {
 
                                                     var bottom_of_object = $(this).position().top + $(this).outerHeight();
